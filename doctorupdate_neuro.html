@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name ="viewport" content="width=device-width, initial-scale=1.0">
+        <meta http-equiv="X-UA-Compatiable" content="ie=edge">
+        <title>HMS</title>
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+    <link href="https://fonts.googleapis.com/css?family=Baloo+Bhai|Bree+Serif&display=swap" rel="stylesheet">
+     <link rel="stylesheet" href="hms.css"> 
+    <style>
+*{
+    margin: 0;
+    padding: 0;
+    font-family: 'Baloo Bhai', cursive;
+}    
+        
+.course{
+    width: 90%;
+    margin: auto;
+    text-align: center;
+    padding-top: 5px;
+}
+h1{
+    font-size: 36px;
+    font-weight: 600;
+}
+.row{
+    margin-top: 2%;
+    display: flex;
+    justify-content: space-between;
+
+}
+.col{
+    flex-basis: 31%;
+    background: #fff3f3;
+    border-radius: 10px;
+    margin-bottom: 5%;
+    padding: 20px 12px;
+    box-sizing: border-box;
+    transition: 0.5s;
+}
+.col:hover{
+    box-shadow: 0 0 20px 0px rgba(0,0,0,0.2);
+}
+
+@media(max-width:700px){
+    .row{
+        flex-direction: column;
+    }
+}
+    </style>
+    </head>
+    <body>
+        <section class="course" id="doctor">
+            <h1><strong>HOSPITAL MANAGEMENT SYSTEM</strong></h1>
+                 <div class="row">
+                     <div class="col">
+                        <form  action="doctorupdateServlet_neuro" method="POST"> 
+                            <fieldset><legend>UPDATE INFO</legend>
+                                <label>Doctor id : </label><br/>
+                                <input type="text" placeholder="Enter doctor id" name="id" required>  <br/> 
+                                <label>Doctor name : </label> <br/>  
+                                <input type="text" placeholder="Enter doctor name" name="name" required> <br/> 
+                                <label>Enter email_id : </label> <br/>  
+                                <input type="text" placeholder="Enter email" name="email" required> <br/>
+                                <label>Contact number : </label>  <br/> 
+                                <input type="text" placeholder="Enter contact number" name="number" required> <br/>
+                                <label> Gender : </label> <br/>  
+                                <input type="text" placeholder="Enter gender" name="gender" required> <br/>
+                                <label> Blood group: </label>  <br/> 
+                                <input type="text" placeholder="Enter blood group" name="blood" required><br/>
+                                <br/> 
+                                <center><button type="submit" name="save">UPDATE</button></center> 
+                            </fieldset>
+                            <h3><a href="hms.html" class="visit-btn1">&#9;Back to Home page&#9;</a></h3>
+                        </form> 
+                     </div>
+                 </div>
+             
+        </section>
+    </body>
+</html>

@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name ="viewport" content="width=device-width, initial-scale=1.0">
+        <meta http-equiv="X-UA-Compatiable" content="ie=edge">
+        <title>HMS</title>
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+    <link href="https://fonts.googleapis.com/css?family=Baloo+Bhai|Bree+Serif&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="hms.css">
+    </head>
+    <body>
+        <section class="course" id="course">
+            <h1><strong>HOSPITAL MANAGEMENT SYSTEM</strong></h1>
+                 <div class="row">
+                     <div class="col">
+                        <form action="roomServlet" method="POST">
+                            <fieldset><legend>ROOM SELECTION</legend>  <br/><br/>  
+                                <label>Patient id : </label>
+                                <input type="text" placeholder="Enter patient id" name="p_id" required>  <br/><br/> 
+                                <label>Enter room type : </label>   
+                                <input type="text" placeholder="ac/nac" name="room_type" required><br/><br/>  
+                                <label>Enter bed type : </label>   
+                                <input type="text" placeholder="2/3/4" name="bed_type" required> <br/><br/>
+                                <label>Enter food type : </label>   
+                                <input type="text" placeholder="normal/special" name="food_type" required> <br/><br/> 
+                                <center><button type="submit" >SELECT</button></center> 
+                                <br/> <br/> 
+                            </fieldset> 
+                            <h3><a href="hms.html" class="visit-btn1">&#9;Back to Home page&#9;</a></h3>
+                        </form> 
+                     </div>
+                 </div>
+        </section>
+    </body>
+</html>
